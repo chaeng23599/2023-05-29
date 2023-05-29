@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: inherit;
@@ -15,11 +18,14 @@ a{
 body{
     line-height: 1.5;
     font-size: 14px;
+    background-color: #fff;
+    color: #222;
 }
 
 .wrap{
     margin: 0 auto;
     display: flex;
+    width: 100%;
 }
 
 .left{
@@ -55,19 +61,23 @@ body{
     text-align: center;
 }
 
-.right{
-    width: calc(100% - 200px - 230px);
-}
-
 
 .slider{
     display: flex;
     height: 400px;
+    position: relative;
 }
 
 .slide{
-    width: 100%;
+    width: calc(100% - 200px - 230px);
+    position: relative;
     overflow: hidden;
+}
+
+.slide img{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
 }
 
 .link{
@@ -81,13 +91,13 @@ body{
     padding: 10px;
 }
 
-.arrow img{
+/* .arrow img{
     width: 40px;
     height: 50px;
     position: absolute;
     top: 350px;
     right: 20px;
-}
+} */
 .content{
     width: 100%;
     display: flex;
