@@ -83,6 +83,7 @@ body{
 .link{
     width: 230px;
     height: 400px;
+    position: relative;
 }
 
 .link .text_box{
@@ -91,24 +92,30 @@ body{
     padding: 10px;
 }
 
-/* .arrow img{
+.arrow img{
     width: 40px;
     height: 50px;
     position: absolute;
     top: 350px;
     right: 20px;
-} */
+}
+
 .content{
-    width: 100%;
     display: flex;
     height: 250px;
+    position: relative;
 }
-
 
 .notice{
-    flex: 1;
+    padding: 20px;
 }
 
+.notice li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+}
 .notice li a{
     display: block;
     white-space: nowrap;
@@ -117,5 +124,6 @@ body{
 }
 
 .gallery{
-    flex: 1;
+    padding: 20px;
 }
+
